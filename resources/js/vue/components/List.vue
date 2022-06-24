@@ -20,7 +20,7 @@
                                 </tr>
                             </thead>
                             <tbody v-if="brands.length > 0">
-                                <tr v-for="(brand,key) in brands" :key="key">
+                                <tr v-for="brand of brands" :key="brand.id">
                                     <td>{{ brand.id }}</td>
                                     <td>{{ brand.name }}</td>
                                     <td>{{ brand.description }}</td>
